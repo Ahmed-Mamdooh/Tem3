@@ -1,3 +1,17 @@
+let scrollButton = document.querySelector("button.scroll-to-top");
+addEventListener("scroll", function () {
+  if (this.window.scrollY >= 700) {
+    scrollButton.style.display = "flex";
+  } else {
+    scrollButton.style.display = "none";
+  }
+  scrollButton.onclick = function () {
+    window.scroll({
+      top: 0,
+      behaviour: "smooth",
+    });
+  };
+});
 let chartsSpans = document.querySelectorAll(".our-skills .skill h3 span");
 let charts = document.querySelectorAll(".our-skills .skill .the-progress span");
 let chartsContainer = document.querySelector(".our-skills");

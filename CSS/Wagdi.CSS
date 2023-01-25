@@ -425,6 +425,46 @@ a {
 
 /* end landing */
 
+/* Scroll To Top */
+.scroll-to-top {
+    background-color: var(--main-color);
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 3px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.scroll-to-top::before,
+.scroll-to-top::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-color: white transparent transparent white;
+    border-style: solid;
+    border-width: 4px;
+    transform: rotate(45deg);
+
+}
+
+.scroll-to-top::before {
+    /* top: 10px; */
+}
+
+.scroll-to-top::after {
+    top: 22px;
+}
+
+/* Scroll To Top */
 
 /* start articles */
 .articles {
